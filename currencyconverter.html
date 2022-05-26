@@ -1,0 +1,78 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <style>
+        body {
+            background-color: #3b344c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mt-4 container-fluid border border-warning">
+            <h2 class="text-center text-warning">Currency Convertor App</h2>
+        </div>
+
+        <div class="mt-4 container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h5 class="text-light">Distance</h5>
+                    <p class="text-justify text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit reprehenderit soluta impedit tenetur blanditiis adipisci ea dolorem molestias dolor voluptas laboriosam cum, culpa asperiores consequuntur. Reprehenderit deserunt nesciunt est blanditiis!</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="Images/distancepic.jpg" alt="Not Available" class="img-fluid img-responsive">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <p class="text-light text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo impedit eum hic laboriosam modi at perferendis sapiente quasi cupiditate assumenda quidem ipsum veniam odit porro, sunt neque recusandae unde ratione!</p>
+                    <hr style="background-color: white;"/>
+                    <p class="text-light text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cum sint fuga, ipsum neque eveniet atque mollitia, dolor deleniti ab laboriosam consectetur expedita recusandae laudantium harum tenetur omnis. Quasi, aut!</p>
+                        <hr style="background-color: white;"/>
+
+                    <p class="text-light text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reprehenderit ad error pariatur temporibus veritatis cum tenetur sit, nobis suscipit ratione adipisci, ipsam laborum architecto vero inventore dolore blanditiis fugit.</p>
+                </div>
+                <div class="p-3 border border-warning col-md-6 col-sm-6">
+                    <input type="number" id="meterinput" class="form-control" placeholder="Convert Your Currency" required>
+                    <div class="mt-4 row">
+                        <div class="col-md-3">
+                            <label class="text-light">Select Currency</label>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="unit" class="form-control">
+                                <option value="Dolor">Dolor</option>
+                                <option value="Dirham">Dirham</option>
+                                <option value="Taka">Taka</option>
+                                <option value="Dinar">Dinar</option>
+                                <option value="Pound">Pound</option> 
+                                <option value="Indian RS">Indian RS</option>
+
+
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <button class="btn btn-warning btn-block" onclick="calc()">Convert</button>
+                        </div>
+                    </div>
+
+                    <input type="text" id="answer" placeholder="Answer" class="mt-4 form-control" readonly>
+
+                </div>
+
+                <script src="currency.js"></script>
+        
+</body>
+</html>
