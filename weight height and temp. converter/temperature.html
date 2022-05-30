@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #5da3d7;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #5da3d7;">
+        <a class="navbar-brand" href="#">Temperature</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="weight converter.html">Weight</a>
+                <a class="dropdown-item" href="temperature.html">Temperature</a>
+                <a class="dropdown-item" href="height.html">Height</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    <div class="container">
+        <div class="mt-4 container-fluid border border-dark">
+            <h1 class="text-center text-dark">Temperature Converter App</h1>
+        </div>
+
+        <div class="mt-4 container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <h5>Temperature</h5>
+                    <p class="text-justify">In science and engineering, the weight of an object is the force acting on the object due to gravity. Some standard textbooks define weight as a vector quantity, the gravitational force acting on the object. Others define weight as a scalar quantity, the magnitude of the gravitational force</p>
+                </div>
+                <div class="col-md-4m col-sm-4">
+                    <img src="images/temperatue1.jpg" alt="not availible" class="img-fluid img-reponsive">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                   <p class="text-dark text-justify"><b>Fahrenheit</b>The Fahrenheit scale is a temperature scale based on one proposed in 1724 by the physicist Daniel Gabriel Fahrenheit. It uses the degree Fahrenheit as the unit.</p> 
+                    <hr style="background-color: black;">
+
+                    <p class="text-dark text-justify"><b>Kelvin</b>The kelvin, symbol K, is the SI base unit of temperature, named after the Belfast-born and University of Glasgow based engineer and physicist William Thomson, 1st Baron Kelvin. The Kelvin scale is an absolute thermodynamic temperature scale, meaning it uses absolute zero as its null point.</p>
+                    <hr style="background-color: black;">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="form-control p-3 border border-dark col-md-12 col-sm-12" style="background-color:#5da3d7 ;">
+                        <input type="number" id="temp" class="form-control" placeholder="Enter Temperature In Celsius" required>
+                        <div class="mt-4 row">
+                            <div class="col-md-3">
+                                select unit 
+                            </div>
+                            <div class="col-md-5">
+                                <select id="units" class="form-control">
+                                    <option value="gg">unit</option>
+                                    <option value="Fahrenheit">Fahrenheit</option>
+                                    <option value="Kelvin">Kelvin</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-danger btn-block" onclick="calc()">Convert</button>
+                            </div>
+                        </div>
+    
+                        <input type="text" id="result" placeholder="Your Temperature" class="mt-4 form-control" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="temperature.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

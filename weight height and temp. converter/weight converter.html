@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #03334a;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #03334a;">
+        <a class="navbar-brand text-light" href="#">Weight</a>
+        <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="weight converter.html">Weight</a>
+                <a class="dropdown-item" href="temperature.html">Temperature</a>
+                <a class="dropdown-item" href="height.html">Height</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    <div class="container">
+        <div class="mt-4 container-fluid border border-light">
+            <h1 class="text-center text-light">Weight Converter App</h1>
+        </div>
+
+        <div class="mt-4 container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <h5 class="text-light">Weight</h5>
+                    <p class="text-justify text-light">In science and engineering, the weight of an object is the force acting on the object due to gravity. Some standard textbooks define weight as a vector quantity, the gravitational force acting on the object. Others define weight as a scalar quantity, the magnitude of the gravitational force</p>
+                </div>
+                <div class="col-md-4m col-sm-4">
+                    <img src="images/weight1.jpg" alt="not availible" class="img-fluid img-reponsive">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                   <p class="text-light text-justify"><b>Gram</b>What is a gram in weight?
+                    A gram is the mass/weight equal to 1/1,000 of a kilogram and is roughly equivalent to the mass of one cubic centimeter of water. The gram, or gramme, is an SI unit of weight in the metric system. Grams can be abbreviated as g;</p> 
+                    <hr style="background-color: white;">
+
+                    <p class="text-light text-justify"><b>Pound</b>The pound or pound-mass is a unit of mass used in British imperial and United States customary systems of measurement</p>
+                    <hr style="background-color: white;">
+
+                    <p class="text-light text-justify"><b>Ton</b>The ton is a unit of measure. It has a long history and has acquired a number of meanings and uses over the years. It is used principally as a unit of weight. Its original use as a measurement of volume has continued in the capacity of cargo ships and in terms such as the freight ton.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="form-control p-3 border border-light col-md-12 col-sm-12" style="background-color:#03334a ;">
+                        <input type="number" id="KG" class="form-control" placeholder="Enter Weight In KG" required>
+                        <div class="mt-4 row">
+                            <div class="col-md-3 text-light">
+                                select unit
+                            </div>
+                            <div class="col-md-5">
+                                <select id="units" class="form-control">
+                                    <option value="gg">unit</option>
+                                    <option value="Gram">Gram</option>
+                                    <option value="Pound">Pound</option>
+                                    <option value="Ton">Ton</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-primary btn-block" onclick="calc()">Convert</button>
+                            </div>
+                        </div>
+    
+                        <input type="text" id="result" placeholder="Result" class="mt-4 form-control" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="weight.js"></script>
+</body>
+</html>
