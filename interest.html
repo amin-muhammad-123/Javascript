@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+
+<style>
+body{
+    background-image: url('interest.jpg');
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+    <div class=" mt-4 container">
+        <div class="row">
+            
+     <div class="col-md-2">
+        <p class="text-dark" >Enter Amount</p>
+    </div>
+
+    <div class="col-md-6">
+        <input type="number"  id="amount" placeholder="Enter Amount" class="form-control">
+    </div>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-md-2">
+               <p class="text-dark" >Enter Rate</p>
+           </div>
+       
+           <div class="col-md-6">
+               <input type="text"  id="rate" placeholder="Enter Rate" class="form-control">
+           </div>
+               </div>
+
+               <div class="row">
+            
+                <div class="col-md-2">
+                   <p class="text-dark" >Enter Time</p class="text-light">
+               </div>
+           
+               <div class="col-md-6">
+                   <input type="number" id="time"placeholder=" Enter Time" class="form-control">
+               </div>
+                   </div>
+
+<div class="row">
+    <div class="col-md-4">
+        <button class="btn btn-success btn block" onclick="interest()" >Interest</button>
+        
+    </div>
+</div>
+<div class="mt-4 container">
+    <h4 class="text-dark" >Your Interest Wiil Be Show Here</h4>
+
+</div>
+<h5 id="res" class="text-dark">Your Interest Is </h5>
+<script src="interest.js"></script>   
+</div>
+</body>
+</html>
